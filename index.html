@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chacha Bots</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1591696205602-2f950c417cb9') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2e3a59;
+    }
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      background-color: #f9f9f9;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #1b4d3e;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #2e3a59;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #2e3a59;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .team-card {
+      width: 220px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .team-card h4 {
+      margin: 10px 0 5px;
+      color: #2e3a59;
+    }
+    .team-card p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      .pricing, .team-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenidos a Chacha Bots</h1>
+    <p>Soluciones inteligentes para el manejo de clientes</p>
+  </header>
+
+  <section>
+    <h2>¿Qué es Chacha Bots?</h2>
+    <p>Chacha Bots es una empresa dedicada a ofrecer soluciones digitales para el manejo de clientes. Creamos herramientas personalizadas para empresas ficticias que desean optimizar su relación con sus usuarios. Nuestro servicio combina gestión de datos, métricas y soporte eficiente.</p>
+  </section>
+
+  <section>
+    <h2>Planes y Precios</h2>
+    <div class="pricing">
+      <div class="card">
+        <h3>Servicio Normal</h3>
+        <p><strong>S/1500 – S/2000 mensuales</strong><br>
+        (Dependiendo del tamaño de la empresa)</p>
+        <ul>
+          <li>Gestión de base de datos</li>
+          <li>Seguimiento simple</li>
+          <li>Impuestos incluidos</li>
+        </ul>
+        <a href="#contratar" class="btn">Contratar Servicio</a>
+      </div>
+      <div class="card">
+        <h3>Servicio Premium</h3>
+        <p><strong>S/3000 – S/7000 mensuales</strong><br>
+        (Dependiendo del tamaño de la empresa)</p>
+        <ul>
+          <li>Métricas avanzadas</li>
+          <li>Análisis de comportamiento</li>
+          <li>Soporte en tiempo real</li>
+          <li>Incluye todo lo del servicio normal</li>
+          <li>Impuestos incluidos</li>
+        </ul>
+        <a href="#contratar" class="btn">Contratar Servicio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="acerca">
+    <h2>Acerca de Nosotros</h2>
+    <p>Somos <strong>Chacha Bots</strong>, una empresa chachapoyana formada por un pequeño grupo de emprendedores capacitados. Contamos con amplia experiencia laboral y estamos comprometidos con brindar soluciones innovadoras.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <h4>Alim Delgado</h4>
+        <p>Fundador y CEO</p>
+      </div>
+      <div class="team-card">
+        <h4>Kevin Antesana</h4>
+        <p>Ingeniero en software y ciberseguridad</p>
+      </div>
+      <div class="team-card">
+        <h4>Jade Mundaca</h4>
+        <p>Publicista</p>
+      </div>
+      <div class="team-card">
+        <h4>Diana Rocha</h4>
+        <p>Administradora</p>
+      </div>
+      <div class="team-card">
+        <h4>Nayely</h4>
+        <p>Influencer y redes sociales</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contratar">
+    <h2>Contratación</h2>
+    <p>Para contratar nuestros servicios, contáctanos a través de:</p>
+    <ul>
+      <li>📞 Teléfono: +51 999 888 777</li>
+      <li>✉️ Correo: contacto@chachabots.com</li>
+    </ul>
+    <h3>Formulario de Contacto</h3>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="4" placeholder="Mensaje o consulta" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+</body>
+</html>
